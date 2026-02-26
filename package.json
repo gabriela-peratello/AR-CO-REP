@@ -1,0 +1,25 @@
+{
+  "name": "ar-co-rep",
+  "version": "1.0.0",
+  "description": "Projeto que tem como intenção reunir em apenas um programa as atividades realizadas em sala de aula, facilitando a consulta do código no futuro.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriela-peratello/AR-CO-REP.git"
+  },
+  "keywords": [
+    "projeto",
+    "organização",
+    "comentários",
+    "treino"
+  ],
+  "author": "Gabriela Peratello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriela-peratello/AR-CO-REP/issues"
+  },
+  "homepage": "https://github.com/gabriela-peratello/AR-CO-REP#readme"
+}
