@@ -10,3 +10,24 @@ $    -> Dados variáveis;
 *    -> Criar vários elementos
 ()   -> Envelopar os comandos do EMMET
 
+
+Atribuir a função a um local ou atribuir uma função?
+
+funcao (sem parênteses): É a variável que guarda a lógica. Você usa para "agendar" uma execução futura (como em eventos).
+funcao() (com parênteses): É a ordem de "faça agora". O código para o que está fazendo e executa a função naquele exato momento.
+
+
+
+Função anônima (Função de seta): -> Não deu um nome para a função; a definiu diretamente dentro do "ouvinte de eventos" (addEventListener).
+Vantagem: É rápido e útil para lógicas simples que só serão usadas naquele lugar.
+Desvantagem: Você não consegue remover esse evento facilmente depois ou reutilizar essa mesma lógica em outro botão sem copiar o código.
+
+btnVoltar.addEventListener('click', function(){
+window.location.href = '../index.html'
+});
+
+
+Referência de Função: -> Declarou a função navegar e depois atribuiu o nome dela ao evento de clique. Escreveu apenas navegar (sem os parênteses). Isso passa a referência da função para o navegador, dizendo: "Ei, quando o usuário clicar, execute o que estiver guardado aqui".
+
+# ESTUDAR PARA A PRÓXIMA AULA
+Eventos, funções, propriedades e objetos

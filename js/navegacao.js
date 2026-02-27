@@ -8,12 +8,24 @@ function criarBotao(){
     btnVoltar.style.marginTop = '20px'
 
     // Lógica do click
-    btnVoltar.addEventListener('click', function(){
-        window.location.href = '../index.html'
-    });
+
+
+
+    // btnVoltar.addEventListener('click', function(){
+    //     window.location.href = '../index.html'
+    // });
+
+    function navegar(){
+            window.location.href = '../index.html'
+        };
+
+    btnVoltar.addEventListener("click", navegar)
 
     // Adicionar o botão final do body
     document.body.appendChild(btnVoltar)
 };
 
-window.onload = criarBotao();
+window.onload = criarBotao;
+
+
+

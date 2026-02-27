@@ -1,10 +1,10 @@
 /* Variáveis do Design System */
 :root{
-    --primary-color: rgb(212, 144, 144);
-    --primary-hover: rgb(161, 228, 191);
-    --bg-color: rgb(26, 21, 21);
-    --text-color: rgb(198, 145, 228);
-    --white: rgb(124, 149, 196);
+    --primary-color: rgb(122, 153, 136);
+    --primary-hover: rgb(82, 97, 89);
+    --bg-color: rgb(45, 54, 42);
+    --text-color: rgb(204, 221, 188);
+    --white: rgb(128, 172, 148);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px  rgba(0, 0, 0, 0.1);
     --radius: 8px;
     --font:"Montserrat", sans-serif;
@@ -27,6 +27,7 @@ flex-direction: column;
 align-items: center;
 min-height: 100vh;
 text-align: center;
+justify-content: center;
 }
 
 /* Header */
