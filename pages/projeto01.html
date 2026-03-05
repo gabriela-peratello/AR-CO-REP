@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 01</title>
-
-    <!-- Estilo global -->
-     <link rel="stylesheet" href="../css/global.css">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
-    <h1>Projeto 01</h1>
 
-    <script src="../js/navegacao.js"></script>
+<body>
+    <!-- PRINCIPAL -->
+    <main class="calculator">
+        <header class="calculator__header">
+            <h1 class="calculator__title">Calculadora de IMC</h1>
+        </header>
+
+        <section class="calculator__form-section">
+
+            <form class="calculator_form" id="imcForm">
+                <div class="calculator_form-group">
+                    <label for="weight" class="calculator_label">Peso (kg)</label>
+                    <input type="number" id="weight" class="calculator_input" placeholder="Ex: 70" required>
+                </div>
+                <div class="calculator_form-group">
+                    <label for="height" class="calculator_label">Altura (m)</label>
+                    <input type="number" id="height" class="calculator_input" placeholder="Ex: 1.75" step="0.01" required>
+                </div>
+                <div class="calculator_buttons">
+                    <button type="button" class="calculator_button calculator_button--calculate" onclick="calcularIMC()">Calcular</button>
+                    <button type="button" class="calculator_button calculator_button--clear" onclick="limparCampos()">Limpar</button>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="calculator__result-section" id="resultSection">
+            <h2 class="calculator__result-title">Resultado:</h2>
+            <p id="resultText" class="calculator__result-text">Preencha os campos e clique em "calcular".</p>
+        </section>
+
+    </main>
+
+    <script src="./js/calculoimcv3.js"></script>
 </body>
+
+
 </html>
